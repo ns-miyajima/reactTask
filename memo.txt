@@ -1,0 +1,42 @@
+>>useState
+    ステートフック
+
+    >例
+        const [A, B] = useState( initialValue );
+        useState()を呼び出すと二つの戻り値が返され、分割代入でそれを受け取る
+
+    >例の解説
+        A stateの値。ここから現在のstate値が得られる
+        B stateを変更する関数。この変数を呼び出した時の引数がAに渡される。(stateの値が変更される)
+
+        ※useState()に渡すinitialValueがAの初期値になっている
+
+>>useEffect
+    副作用フック
+    ■更新時に処理を実行する。
+    表示が更新されたときに最新のデータを取得するなど
+
+    >例
+        useEffect(()=>{
+            処理
+        })
+
+
+>>useRef
+    ■参照を保持するためのフック
+
+    >例
+        const ref = useRef(initialValue);
+
+    >例の解説
+        useRef()を動かすことで、
+        Refオブジェクト{current : initialValue}を作成
+        ※中身を変更、取得はref.currentを使用
+        >特徴
+            ref.currentの値を変更するだけなので再レンダリングが走らない
+
+>>props
+
+>>map関数(useLocation[データの受け渡し部分]で渡したリストの表示
+ 新しい配列を作成して返す
+>>redux, reducer
